@@ -1,0 +1,158 @@
+/* @font-face{
+    font-family: TTLakes-Regular;
+    src: url(fonts/TTLakes-Regular.woff);
+    }
+    @font-face{
+      font-family: TTLakes-Bold;
+      src: url(fonts/TTLakes-Bold.woff);
+      }
+      @font-face{
+        font-family: TTLakes-Medium;
+        src: url(fonts/TTLakes-Medium.woff);
+        }
+    
+    html{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #F8F8F8;
+        font-size: 14px;
+        
+        margin: 0;
+        }
+.burgerMenu{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}    
+
+  
+.burgerMenu__header{
+  margin-top: 23px;
+display: flex;
+align-items: center;
+justify-content:space-around;
+
+}
+    .back{
+      background: url('./assets/back.svg') no-repeat center;
+      height: 40px;
+width: 40px;
+border: none;
+    }
+    .search{
+      background: url('./assets/search.svg') no-repeat center;
+      height: 40px;
+width: 40px;
+border: none;
+    }  
+.group{
+  padding-right: 20px;
+}    
+.nav__wrapper{
+  margin: 45px 0 0 0;
+  padding: 0;
+}
+.nav__item {
+  position: relative;
+  line-height: 32px;
+  font-weight: 500;
+  transition: color 0.15s;
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+}
+
+.nav__item::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  left: -8px;
+  height: 32px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: background-color 0.15s;
+  
+}
+
+
+
+.nav__item:not(.nav__item--active):hover .nav__link {
+  color: #7E7E82;
+}
+
+.nav__item:not(.nav__item--active):hover::before {
+  background-color: #41F6D7;
+  padding-right: 8px;
+}
+
+
+
+.nav__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  margin: 0 0 24px;
+  color: #1B1C21;
+}
+a { 
+  text-decoration: none; 
+  color: black;
+  
+}
+ul, li {
+  list-style: none;
+}
+
+.burgerMenu__footer{
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+padding-left: 24px;
+}
+.burgerMenu__footerIcons{
+  display: flex;
+ column-gap: 16px;
+  
+}
+.call{
+  background: url('./assets/call.svg') no-repeat center;
+  height: 40px;
+width: 40px;
+border: none;
+}
+.chat{
+  background: url('./assets/chat.svg') no-repeat center;
+  height: 40px;
+width: 40px;
+border: none;
+}
+.profile{
+  background: url('./assets/profile.svg') no-repeat center;
+  height: 40px;
+width: 40px;
+border: none;
+}
+
+.burgerMenu__mail{
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  padding-top: 16px;
+  
+}
+.burgerMenu__number{
+  font-family: TTLakes-Bold;
+  font-size: 24px;
+  padding-top: 16px;
+}
+
+.languageList{
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  display: flex;
+  justify-content:space-between;
+  width: 100px;
+  padding: initial;
+} */
