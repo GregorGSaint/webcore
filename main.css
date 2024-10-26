@@ -1,0 +1,283 @@
+
+    
+    .burger{
+      background: url('./assets/burger.svg') no-repeat center;
+      height: 40px;
+      width: 40px;
+      }
+      .call{
+        background: url('./assets/call.svg') no-repeat center;
+      height: 40px;
+      width: 40px;
+      }
+      .chat{
+        background: url('./assets/chat.svg') no-repeat center;
+      height: 40px;
+      width: 40px;
+      }
+      .profile{
+        background: url('./assets/profile.svg') no-repeat center;
+      height: 40px;
+      width: 40px;
+      }
+      .header__wrapper{
+      display:flex;
+      flex-direction: column-reverse;
+      padding: 18px 16px 24px 16px;
+      background-color: white;
+      font-family: TTLakes-Bold;
+      
+      }
+      
+      
+      
+      .header__container{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      }
+      .header__rightSide{
+        display: flex;
+         
+        align-items: center;
+        
+        }
+      .leftSide__icons{
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+      }
+      h1{
+        position: relative;
+        font-family: TTLakes-Bold;
+        margin: 24px 0 0 16px;
+        }
+      
+      h1::before{
+      position: absolute;
+      content: "";
+      border: 2px solid #41F6D7;
+      height: 40px;
+      border-radius: 3px;
+      left: -16px;
+      }
+      .reviews{
+        font-family: TTLakes-Medium;
+      
+      }
+      
+      
+      .dividerLeft {
+        display: none;
+      }
+      .dividerRight{
+        background: #EAEAEA;
+        height: 32px;
+        width: 2px;
+        margin: 0 20px 0 16px;
+      }
+      
+      
+      
+      .statuses{
+        display: flex;
+         column-gap: 16px; 
+      font-family: TTLakes-Medium;  
+      align-items: center;
+      font-size: 16px;
+      
+        }
+        .call, .chat, .profile{
+          display: none;
+      
+        }
+        .statuses a {
+          display: none;
+          text-decoration: none;
+          color: black;
+        }
+        
+          
+      
+      
+      .menu{
+      display: flex;
+      font-family: TTLakes-Medium;
+      padding: 0;
+      align-items: center;
+      color: #7E7E82;
+      overflow-x: scroll;
+      
+      }
+      
+      .menu__item {
+      list-style-type: none;
+      font-size: 16px;
+      white-space: nowrap;
+      padding: 8px 22px;
+      & > a {
+        text-decoration: none;
+        color: black;
+      }
+      }
+        
+      .menu__item:hover{
+      border: 1px solid #41F6D7;
+      border-radius: 2px;
+      background-color: white;
+      padding: 8px 22px;
+      }
+      
+      
+      .main{
+          font-family: 'TT Lakes Regular';
+          font-size: 14px;
+      }
+      
+      .imgCps{
+        background: url('./assets/mainespc.png') no-repeat;
+         min-width: 320px;
+         min-height: 176px;  
+      }
+      
+      .description{
+        font-family: TTLakes-Regular;
+        max-width: 490px;
+        }
+      .description__text{
+      height: 110px;
+      overflow: hidden;
+      padding: 0 16px;
+      }
+      .next{
+        display: flex;
+        font-family: TTLakes-Medium;
+        align-items: center;
+      }
+      
+      .arrow{
+        background: url('./assets/icon.svg') no-repeat;
+        margin-right: 8px;
+        min-width: 7px;
+        min-height: 10px;
+  
+      }
+      button{
+        border: none;
+        background: inherit;
+      }
+      
+      
+      
+      @media(min-width: 768px){
+        .header__rightSide{
+          column-gap: 20px;
+        }
+       
+        .dividerLeft {
+          background: #EAEAEA;
+          height: 32px;
+          width: 2px;
+          display: block;
+        }
+        .dividerRight{
+          margin: 0;
+        }
+        .leftSide__icons{
+          column-gap: 20px;
+        }
+      
+        .call, .chat, .profile{
+          display: block;
+      
+        }
+      .general__wrapper{
+        padding: 32px 24px;
+        display: flex;
+      }
+      .description__text{
+        height: 145px;
+        padding: 0;
+      }
+      
+      
+       .imgCps{
+        display: block;
+       }
+       .imgCps{
+        background: url('./assets/img_medium.png') no-repeat;
+        min-width: 360px;
+         min-height: 208px;
+         border-radius: 2%;
+       }
+        .statuses{
+          display: flex;
+          
+          }
+          .menu{
+            
+            font-family: TTLakes-Medium;
+            justify-content:space-between;
+            color: #7E7E82;
+            overflow-x: scroll;
+            }
+            .description{
+              display: flex;
+              flex-direction: column;
+            }
+      
+        }
+        @media(min-width: 1120px){
+          .header{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: baseline;
+          }
+          .general__wrapper{
+            justify-content: space-between;
+          }
+        
+          .header__wrapper{
+            margin-top: 30px;
+            background-color:inherit;
+            }
+            .call, .chat, .profile, .burger, .cps {
+              display: none;
+          
+            }
+            .description__text{
+              height: auto;
+            }
+            .menu{
+      flex-wrap: wrap;
+              overflow-x:visible;
+              margin: 0 24px;
+            }
+            .menu__item{
+      
+              padding: 8px 15px;
+            }
+            .menu__item:hover{
+      
+              padding: 8px 15px;
+            }
+          .imgCps{
+            background: url('./assets/img_large.jpg') no-repeat;
+            min-width: 532px;
+             min-height: 308px;
+             margin-left: 32px;
+             border-radius: 2%;
+           }
+           
+           .dividerLeft {
+            display: none;
+          }
+          .dividerRight{
+            display: none;
+          }
+      
+          .statuses a {
+            display: inline
+          }
+        }

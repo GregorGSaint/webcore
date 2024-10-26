@@ -1,306 +1,54 @@
+@import "main.css";
+@import "sidebar.css";
+
+
 @font-face{
-font-family: TTLakes-Regular;
-src: url(fonts/TTLakes-Regular.woff);
-}
-@font-face{
-  font-family: TTLakes-Bold;
-  src: url(fonts/TTLakes-Bold.woff);
+  font-family: TTLakes-Regular;
+  src: url(fonts/TTLakes-Regular.woff);
   }
   @font-face{
-    font-family: TTLakes-Medium;
-    src: url(fonts/TTLakes-Medium.woff);
+    font-family: TTLakes-Bold;
+    src: url(fonts/TTLakes-Bold.woff);
     }
-
-html{
-    box-sizing: border-box;
-}
-
-body{
-background-color: #F8F8F8;
-font-size: 14px;
-
-margin: 0;
-}
-
-.burger{
-background: url('burger.svg') no-repeat center;
-height: 40px;
-width: 40px;
-}
-.call{
-  background: url('call.svg') no-repeat center;
-height: 40px;
-width: 40px;
-}
-.chat{
-  background: url('chat.svg') no-repeat center;
-height: 40px;
-width: 40px;
-}
-.profile{
-  background: url('profile.svg') no-repeat center;
-height: 40px;
-width: 40px;
-}
-.header__wrapper{
-display:flex;
-flex-direction: column-reverse;
-padding: 18px 16px 24px 16px;
-background-color: white;
-font-family: TTLakes-Bold;
-
-}
-
-
-
-.header__container{
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-.header__rightSide{
-  display: flex;
-  column-gap: 16px; 
-  align-items: center;
-  
-  }
-.leftSide__icons{
-display: flex;
-align-items: center;
-column-gap: 16px;
-}
-h1{
-  position: relative;
-  font-family: TTLakes-Bold;
-  margin: 24px 0 0 0;
-  }
-
-h1::before{
-
-content: "";
-border: 2px solid #41F6D7;
-height: 40px;
-margin-right: 20px;
-border-radius: 3px;
-
-}
-.reviews{
-  font-family: TTLakes-Medium;
-
-}
-
-
-.dividerLeft {
-  display: none;
-}
-.dividerRight{
-  background: #EAEAEA;
-  height: 32px;
-  width: 2px;
-  margin: 0 20px 0 16px;
-}
-
-
-
-.statuses{
-  display: flex;
-   column-gap: 16px; 
-font-family: TTLakes-Medium;  
-align-items: center;
-font-size: 16px;
-
-  }
-  .call, .chat, .profile{
-    display: none;
-
-  }
-  .statuses a {
-    display: none;
-    text-decoration: none;
-    color: black;
-  }
-  
-    
-
-
-.menu{
-display: flex;
-font-family: TTLakes-Medium;
-padding: 0;
-align-items: center;
-color: #7E7E82;
-overflow-x: scroll;
-
-}
-
-.menu__item {
-list-style-type: none;
-font-size: 16px;
-white-space: nowrap;
-padding: 8px 22px;
-& > a {
-  text-decoration: none;
-  color: black;
-}
-}
-  
-.menu__item:hover{
-background-color: white;
-padding: 8px 22px;
-}
-
-
-.main{
-    font-family: 'TT Lakes Regular';
-    font-size: 14px;
-}
-
-.imgCps{
-  background: url('mainespc.png') no-repeat;
-   min-width: 320px;
-   min-height: 176px;  
-}
-
-.description{
-  font-family: TTLakes-Regular;
-  max-width: 490px;
-  }
-.description__text{
-height: 100px;
-overflow: hidden;
-
-}
-.next{
-  display: inline;
-  font-family: TTLakes-Medium;
-  
-}
-
-.arrow{
- display: inline;
-  margin-right: 8px;
-}
-button{
-  border: none;
-  background: inherit;
-}
-
-
-
-@media(min-width: 768px){
- 
-  .dividerLeft {
-    background: #EAEAEA;
-    height: 32px;
-    width: 2px;
-    display: block;
-  }
-
-  .call, .chat, .profile{
-    display: block;
-
-  }
-.general__wrapper{
-  padding: 32px 24px;
-  display: flex;
-}
-.description__text{
-  height: 145px;
-}
-
-
- .imgCps{
-  display: block;
- }
- .imgCps{
-  background: url(img_medium.png) no-repeat;
-  min-width: 360px;
-   min-height: 208px;
-   border-radius: 2%;
- }
-  .statuses{
-    display: flex;
-    
-    
-      & figure {
-        display: flex;
-        justify-content:space-around;
-    align-items: center;
-    
-    
-      }
-    
-      & figcaption{
-    min-width: 125px;
-    font-family: TTLakes-Medium;
-    font-size: 16px;
-    
-      }
-    }
-    .menu{
-      
+    @font-face{
       font-family: TTLakes-Medium;
-      justify-content:space-between;
-      color: #7E7E82;
-      overflow-x: scroll;
+      src: url(fonts/TTLakes-Medium.woff);
       }
-      .description{
-        display: flex;
-        flex-direction: column;
-      }
-
-  }
-  @media(min-width: 1120px){
-    .header{
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row-reverse;
-      align-items: baseline;
-    }
-    .general__wrapper{
-      justify-content: space-between;
-    }
   
-    .header__wrapper{
-      margin-top: 30px;
-      background-color:inherit;
-      }
-      .call, .chat, .profile, .burger, .cps {
-        display: none;
-    
-      }
-      .description__text{
-        height: auto;
-      }
-      .menu{
-flex-wrap: wrap;
-        overflow-x:visible;
-        margin: 0 24px;
-      }
-      .menu__item{
-
-        padding: 8px 15px;
-      }
-      .menu__item:hover{
-
-        padding: 8px 15px;
-      }
-    .imgCps{
-      background: url('img_large.jpg') no-repeat;
-      min-width: 532px;
-       min-height: 308px;
-       margin-left: 32px;
-       border-radius: 2%;
-     }
-     
-     .dividerLeft {
-      display: none;
-    }
-    .dividerRight{
-      display: none;
-    }
-
-    .statuses a {
-      display: inline
-    }
+  
+  
+  body{
+  background-color: #F8F8F8;
+  font-size: 14px;
+  
+  margin: 0;
   }
+
+button{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
