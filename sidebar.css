@@ -3,14 +3,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
   }    
   
     
   .burgerMenu__header{
-    margin-top: 23px;
-  display: flex;
-  align-items: center;
-  justify-content:space-around;
+    width: 320px;
+    margin: 23px 0 45px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   
   }
       .back{
@@ -29,8 +31,10 @@
     padding-right: 20px;
   }    
   .nav__wrapper{
-    margin: 45px 0 0 0;
+    margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
   }
   .nav__item {
     position: relative;
@@ -50,7 +54,7 @@
     width: 4px;
     border-radius: 2px;
     background-color: transparent;
-    transition: background-color 0.15s;
+    transition: background-color 0.5s;
     
   }
   
@@ -90,24 +94,24 @@
   flex-direction: column;
   padding-left: 24px;
   }
-  .burgerMenu__footerIcons{
+  .round-icon{
     display: flex;
    column-gap: 16px;
     
   }
-  .burgerMenu__call{
+  .round-icon__call{
     background: url('./assets/call.svg') no-repeat center;
     height: 40px;
   width: 40px;
   border: none;
   }
-  .burgerMenu__chat{
+  .round-icon__chat{
     background: url('./assets/chat.svg') no-repeat center;
     height: 40px;
   width: 40px;
   border: none;
   }
-  .burgerMenu__profile{
+  .round-icon__profile{
     background: url('./assets/profile.svg') no-repeat center;
     height: 40px;
   width: 40px;
