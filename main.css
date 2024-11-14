@@ -168,13 +168,40 @@
         background: inherit;
       }
       
-      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+  
       
       @media(min-width: 768px){
         .header__rightSide{
           column-gap: 20px;
         }
+       .swiper-wrapper {
+     display: grid !important;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 72px 72px 72px;
+    column-gap: 24px;
+    row-gap: 16px;
+    margin-left: 24px;
+
+       }
        
+       .swiper-container{
+        max-width: fit-content;
+        margin: 0;
+
+  
+       }
         .dividerLeft {
           background: #EAEAEA;
           height: 32px;

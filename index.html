@@ -4,19 +4,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <title>WebCore</title>
     <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
-    <title>WebCore</title>
 </head>
 <body>
+  <!-- <header class="header">
+        
+    <div class="header__wrapper">
+        
+        <div class="header__container">
+        <div class="leftSide">
+    <div class="leftSide__icons">
+        
+         <button class="burger"></button>
+        <div class="dividerLeft"></div>
+        <img src="./assets/Group.jpg" alt="" class="cps"/>
+    </div>
+    
+
+       
+    </div>
+        <div class="divider">
+           
+       
+        </div>
+        <div class="header__rightSide">
+            <button class="call"></button>
+            <button class="chat"></button>
+            <button class="profile"></button>
+            <div class="dividerRight"></div>
+            <div class="statuses">
+                <a href="#">Статус заявки</a>
+               <img src="./assets/repair.jpg" alt=""/>
+                <a href="#">Статус ремонта</a>
+               <img src="./assets/checkstatus.svg" alt=""/>   
+           </div>
+
+        
+    </div>
+</div>
+    </div>
+    <h1>Услуги и сервисы</h1>
+</header>
 
 
+   <nav class="navigation">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="#">Ремонтируемые бренды</a>
+            </li>
+            <li  class="menu__item">
+                <a href="#">Ремонтируемые устройства</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Цены на услуги</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Адреса сервисных центров</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Специальные цены</a>
+            </li>
+            <li class="menu__item">
+                <a href="#">Отзывы</a>
+            </li>
+        </ul>
+    </nav>
+     
+    
+     
+        <main>
+        
+            <div class="general general__wrapper">
+                
 
-    <section class="burgerMenu">
+                <section class="description">
+                <div class="description__text">
+                    <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                
+                <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p> 
+              
+                </div>
+                 <div>
+               
+                
+                    <button class="next"> <p class="arrow"></p>Читать далее</button> 
+                
+               </div>
+                
+            
+            </section>
+            
+            <img class="imgCps" alt="" /> 
+    </div>
+   
+        
+    
+    
+        </main>
+
+    </div> -->
+    
+        <!-- <div class="tittle">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</div>
+    <div class="swiper swiper-container" pagination="true">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap.png" alt="Lenovo">
+                <div class="circle">
+                </div>
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-2.png" alt="Samsung">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-4.png" alt="Apple">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-6.png" alt="Viewsonic">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-1.png" alt="Bosch">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-3.png" alt="Hp">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-5.png" alt="Acer">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+        <div class="swiper-slide">
+            <button class="swiper-slide__button">
+                <img class="swiper-slide__image" src="./assets/Bitmap-7.png" alt="Sony">
+                <div class="circle">
+                </div>
+            </button>
+        </div>
+    </div>  
+    <div>
+               
+                
+        <button class="readMore"> <p class="readMore__arrow"></p>Читать далее</button> 
+    
+   </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      
+      <script>
+        var swiper = new Swiper(".swiper-container", {
+          pagination: {
+            el: ".swiper-pagination",
+
+        },
+        });
+  
+    const breakpoint = window.matchMedia("(min-width:768px)");
+
+    const swiperClass = document.querySelector('.swiper-container')
+    if(breakpoint.matches) { 
+      console.log('egs');
+      swiper.update();
+      swiperClass.style.display = 'none'
+swiper.destroy();
+
+    }
+else {
+  swiperClass.style.display = 'block';
+}
+
+
+      </script> -->
+
+      <aside class="burgerMenu">
         <div>
         <div class="burgerMenu__header">  
         
@@ -88,8 +278,7 @@
 
 
 
-        </section>    
-
+        </aside>    
 </body>
 </html>
 
